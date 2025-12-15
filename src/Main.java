@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args)  {
-        System.out.println("Hello, workd! My name is Akzhigit");
+        System.out.println("Hello, workd! My name is Akzhigit Group SE-2523");
     }
 }

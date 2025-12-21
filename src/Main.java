@@ -26,6 +26,7 @@ public class Main {
 
         System.out.println(myCourse);
         System.out.println("Average GPA: " + myCourse.courseAverageGPA());
+        System.out.println("Highest Credit Student: " + myCourse.highestCreditStudent().getName());
 
         Student[] studentArray = {s1, s2, s3, s4, s5};
 

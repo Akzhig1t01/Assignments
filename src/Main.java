@@ -29,10 +29,11 @@ public class Main {
 
         Student[] studentArray = {s1, s2, s3, s4, s5};
 
+        System.out.println("\n--- Statistics ---");
         Student top = getTopStudent(studentArray);
         System.out.println("Top Student: " + (top != null ? top.getName() : "None"));
-
         System.out.println("Honors Count: " + countHonors(studentArray));
+        System.out.println("Total Credits: " + totalCredits(studentArray));
     }
 
     public static Student getTopStudent(Student[] students) {
@@ -54,5 +55,15 @@ public class Main {
             }
         }
         return count;
+    }
+
+    public static int totalCredits(Student[] students) {
+        int total = 0;
+        for (Student s : students) {
+            if (s != null) {
+                total += s.getCredits();
+            }
+        }
+        return total;
     }
 }

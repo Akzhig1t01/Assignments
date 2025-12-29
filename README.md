@@ -1,24 +1,31 @@
-# Assignment 1 - Student Management System
+Assignment 1 - Student Management System
+A practical project focused on Java OOP fundamentals. This program demonstrates how to work with classes, objects, and data arrays effectively.
 
-Практическая работа по основам ООП на Java. Программа демонстрирует работу с классами, объектами и массивами данных.
+Project Description
+The project implements logic for managing a list of students and analyzing their academic performance.
 
-## Описание проекта
-В проекте реализована логика управления списком студентов и анализа их успеваемости.
+Key Features:
+Data Management: Creating student objects with Name, ID, and GPA fields.
 
-### Основные возможности:
-* **Управление данными**: создание объектов студентов с полями Name, ID и GPA.
-* **Композиция**: класс `Course` содержит массив объектов `Student`.
-* **Анализ успеваемости**:
-    * Расчет среднего GPA по всему курсу.
-    * Поиск студента с самым высоким баллом.
-    * Подсчет количества отличников (студенты с GPA >= 3.5).
+Composition: The Course class manages an internal array of Student objects.
 
-## Структура
-1.  `Student.java` — модель данных студента и проверка статуса "Honors".
-2.  `Course.java` — логика хранения массива студентов и групповые расчеты.
-3.  `Main.java` — запуск программы, создание тестовых данных и вызов статических методов.
+Performance Analysis:
 
-## Как запустить
-Откройте проект в IntelliJ IDEA и запустите метод `main` в файле `Main.java`. Результаты расчетов отобразятся в консоли.
-## Reflection
-В ходе выполнения этой работы я закрепил навыки использования инкапсуляции и композиции в Java. Самым сложным было настроить взаимодействие между классами Student и Course через массивы объектов. Применение модификаторов доступа private помогло защитить данные от прямого изменения, что делает код более надежным и структурированным.
+Calculation of the average GPA for the entire course.
+
+Searching for the student with the highest score.
+
+Counting "Honors" students (those with a GPA ≥ 3.5).
+
+Structure
+Student.java — Data model for a student, including the logic for textual representation (toString) and "Honors" status.
+
+Course.java — Manages the array of students and performs group-based calculations.
+
+Main.java — Entry point of the program. It initializes test data and demonstrates static analysis methods.
+
+How to Run
+Open the project in IntelliJ IDEA and run the main method in Main.java. The calculation results will be displayed in the console.
+
+Reflection
+During this assignment, I strengthened my skills in using Encapsulation and Composition in Java. The most challenging part was managing the interaction between the Student and Course classes through arrays of objects. Using private access modifiers helped protect the data from direct modification, making the code more reliable and well-structured.
